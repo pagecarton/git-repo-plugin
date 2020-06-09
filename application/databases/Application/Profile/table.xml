@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DOCUMENT_ELEMENT table_name="table" creation_time="1591649229" modified_time="1591649229" table_version="0.3" module_version="1.00" table_class="Application_Profile_Table" creation_ip="0">
+  <RECORDS autoId="2">
+    <TABLE_ROW ROW_ID="1">
+      <TABLE_FIELD FIELD_KEY="display_name"><![CDATA[Ayola]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="profile_url"><![CDATA[ayola]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="username"><![CDATA[joywealth]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="user_id"><![CDATA[1554892638.1731]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1591649229]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="creation_ip"><![CDATA[::1]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[[1591649229]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_ip"><![CDATA[[&quot;::1&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="access_level"><![CDATA[1]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="profile_data"><![CDATA[{&quot;display_name&quot;:&quot;Ayola&quot;,&quot;profile_description&quot;:&quot;&quot;,&quot;display_picture&quot;:&quot;&quot;,&quot;profile_url&quot;:&quot;Ayola&quot;,&quot;username&quot;:&quot;joywealth&quot;,&quot;user_id&quot;:1554892638.173078,&quot;profile_creation_date&quot;:1591649229,&quot;profile_modified_date&quot;:1591649229,&quot;creation_time&quot;:1591649229,&quot;creation_ip&quot;:&quot;::1&quot;,&quot;modified_time&quot;:[1591649229],&quot;modified_ip&quot;:[&quot;::1&quot;],&quot;access_level&quot;:1}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="category_name"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="table_id"><![CDATA[1591649229-0-1]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1554892638.1731]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+    </TABLE_ROW>
+  </RECORDS>
+  <TABLE_SETTINGS>
+    <DATA_TYPES profile_url="INPUTTEXT" display_name="INPUTTEXT" username="INPUTTEXT" user_id="INPUTTEXT" access_level="INT" profile_data="JSON" creation_time="INT" modified_time="JSON" category_name="JSON" creation_ip="INPUTTEXT" modified_ip="JSON" table_id="INPUTTEXT" __user_id="INPUTTEXT" __update_user_id="JSON" __user_agent_id="INPUTTEXT" __ip="JSON"/>
+    <FOREIGN_KEYS/>
+    <RELATIVES/>
+  </TABLE_SETTINGS>
+</DOCUMENT_ELEMENT>
