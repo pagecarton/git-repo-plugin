@@ -43,18 +43,50 @@ class GitRepository_Sync extends PageCarton_Widget
 		{ 
             //  Code that runs the widget goes here...
 
-            //  Output demo content to screen
-             $this->setViewContent( self::__( '<h1>Hello PageCarton Widget</h1>' ) ); 
-             $this->setViewContent( self::__( '<p>Customize this widget (' . __CLASS__ . ') by editing this file below:</p>' ) ); 
-             $this->setViewContent( self::__( '<p style="font-size:smaller;">' . __FILE__ . '</p>' ) ); 
+            if( empty( $_REQUEST['article_url'] ) )
+            {
+                $this->setViewContent( '<p class="badnews">No ID of the plugin to synchronize is set</p>' ); 
+                return false;
+            }
+            $postId = $_REQUEST['article_url'];
+            if( ! $postData = Application_Article_Abstract::loadPostData( $postId ) )
+            {
+                $this->setViewContent( '<p class="badnews">Post data not found for plugin</p>' ); 
+                return false;
+            }
+            if( ! empty( $postData['download_url'] ) )
+            {
+                $this->setViewContent( '<p class="badnews">Plugin file has not been uploaded</p>' ); 
+                return false;
+            }
 
-             // end of widget process
-          
+            if( ! $url = self::filterGitUrl( $postData['git'] ) )
+            {
+                $this->setViewContent( '<p class="badnews">GIT URI not properly set</p>' ); 
+                return false;
+            }
+                
+            if( ! $content = self::fetchLink( $url, array( 'rand' => time(), 'time_out' => 3600, 'connect_time_out' => 360, 'raw_response_header' => true, 'return_as_array' => true, ) ) )
+            {
+                $this->setViewContent( 'NOT ABLE TO CONNECT TO REPOSITORY - ' . $url . ' ' );
+            }
+
+            $filename = Ayoola_Doc::getDocumentsDirectory() . DS . $postData['download_url'];
+            if( ! is_file( $filename ) )
+            {
+                $this->setViewContent( '<p class="badnews">Plugin file data is lost</p>' ); 
+                return false;
+            }
+
+            Ayoola_File::putContents( $filename, $content['response'] );  
+            $this->setViewContent( '<p class="goodnews">GIT url ' . $url . ' synchronized with plugin ' . $postData['article_title'] .  ' </p>' ); 
+            return true;
+                      
+            // end of widget process  
 		}  
 		catch( Exception $e )
         { 
             //  Alert! Clear the all other content and display whats below.
-        //    $this->setViewContent( self::__( '<p class="badnews">' . $e->getMessage() . '</p>' ) ); 
             $this->setViewContent( self::__( '<p class="badnews">Theres an error in the code</p>' ) ); 
             return false; 
         }

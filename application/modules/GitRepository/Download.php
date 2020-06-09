@@ -37,7 +37,22 @@ class GitRepository_Download extends PageCarton_Widget
      * 
      * 
      */
-	public function hook( $object, $method, &$data )
+	public static function filterGitUrl( $url )
+    {
+        if( empty( $url ) )
+        {
+            return false;
+        }
+        $url = str_ireplace( array( '.git', '.zip', '.tar.gz', 'https://', 'http://' ), '', $url );
+        $url = 'https://' . $url . '/archive/master.tar.gz';
+        return $url;
+    }
+
+    /**
+     * 
+     * 
+     */
+	public static function hook( $object, $method, &$data )
     {
         if( $method !== 'getDownloadContent' )
         {
@@ -47,9 +62,10 @@ class GitRepository_Download extends PageCarton_Widget
         {
             return false;
         }
-        $data['git'] = str_ireplace( array( '.git', '.zip', '.tar.gz', 'https://', 'http://' ), '', $data['git'] );
-        $data['git'] = 'https://' . $data['git'] . '/archive/master.tar.gz';
-        $data['download_url'] = $data['git'];
+        if( $url = self::filterGitUrl( $data['git'] ) )
+        {
+            $data['download_url'] = $url;
+        }
     }
 
     /**
@@ -62,11 +78,7 @@ class GitRepository_Download extends PageCarton_Widget
 		{ 
             //  Code that runs the widget goes here...
 
-            //  Output demo content to screen
-             $this->setViewContent( self::__( '<h1>Hello PageCarton Widget</h1>' ) ); 
-             $this->setViewContent( self::__( '<p>Customize this widget (' . __CLASS__ . ') by editing this file below:</p>' ) ); 
-             $this->setViewContent( self::__( '<p style="font-size:smaller;">' . __FILE__ . '</p>' ) ); 
-             // end of widget process
+            // end of widget process
           
 		}  
 		catch( Exception $e )
