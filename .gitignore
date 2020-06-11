@@ -2,3 +2,13 @@ application/databases/Application/notification.xml
 application/databases/Ayoola/Object/widget.xml
 application/databases/Application/Log/
 application/databases/PageCarton/Cron/Run/
+application/databases/Application/category.xml
+application/databases/Application/Article/table.xml
+application/databases/Application/Article/views.xml
+application/databases/Application/Article/Type/Download/table.xml
+application/databases/Ayoola/Doc/table.xml
+application/databases/Ayoola/Object/
+application/pages/data-backup/
+extensions/
+application/databases/Application/Profile/table.xml
+application/module_files/

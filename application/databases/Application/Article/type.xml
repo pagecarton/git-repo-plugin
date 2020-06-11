@@ -10,15 +10,15 @@
       <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="post_type"><![CDATA[Plugin]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="article_type"><![CDATA[download]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="post_type_options"><![CDATA[[&quot;category&quot;,&quot;cover-photo&quot;,&quot;gallery&quot;,&quot;article&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="post_type_options_name"><![CDATA[[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="post_type_options"><![CDATA[[&quot;category&quot;,&quot;cover-photo&quot;,&quot;gallery&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="post_type_options_name"><![CDATA[[&quot;&quot;,&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="supplementary_form"><![CDATA[plugin-upload-form]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="post_type_custom_fields"><![CDATA[]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="auth_level"><![CDATA[[&quot;0&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="view_auth_level"><![CDATA[[&quot;0&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="preset_keys"><![CDATA[[&quot;&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="preset_values"><![CDATA[[&quot;&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[1591649212]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[1591862923]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[[1554892638.173078]]]></TABLE_FIELD>
     </TABLE_ROW>
   </RECORDS>

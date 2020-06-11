@@ -34,6 +34,21 @@ class GitRepository extends PageCarton_Widget
 	protected static $_objectTitle = 'Git Repository Manager'; 
 
     /**
+     * 
+     * 
+     */
+	public static function filterGitUrl( $url )
+    {
+        if( empty( $url ) )
+        {
+            return false;
+        }
+        $url = str_ireplace( array( '.git', '.zip', '.tar.gz', 'https://', 'http://' ), '', $url );
+        $url = 'https://' . $url . '/archive/master.tar.gz';
+        return $url;
+    }
+
+    /**
      * Performs the whole widget running process
      * 
      */

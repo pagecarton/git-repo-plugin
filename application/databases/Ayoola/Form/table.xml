@@ -2,24 +2,7 @@
 <DOCUMENT_ELEMENT table_name="table" creation_time="1591649137" modified_time="1591649137" table_version="0.19" module_version="1.00" table_class="Ayoola_Form_Table" creation_ip="0">
   <RECORDS autoId="2">
     <TABLE_ROW ROW_ID="1">
-      <TABLE_FIELD FIELD_KEY="form_title"><![CDATA[Plugin Upload Form]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="form_name"><![CDATA[plugin-upload-form]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="form_description"><![CDATA[]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="form_success_message"><![CDATA[]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="button_value"><![CDATA[]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="form_options"><![CDATA[null]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="auth_level"><![CDATA[[&quot;0&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="email"><![CDATA[ayoola@ayoo.la]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="requirements"><![CDATA[null]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_title"><![CDATA[[&quot;Getting Started&quot;,&quot;Git Repository Link&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_name"><![CDATA[[&quot;installation&quot;,&quot;git_link&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_group_name"><![CDATA[null]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_default_value"><![CDATA[[&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_placeholder"><![CDATA[[&quot;Describe how to install and use this plugin&quot;,&quot;e.g. https:\/\/github.com\/sample\/example-plugin&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_type"><![CDATA[[&quot;html&quot;,&quot;text&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_validators"><![CDATA[[&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_access_level"><![CDATA[[&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="element_multioptions"><![CDATA[[&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="group_names"><![CDATA[null]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="group_descriptions"><![CDATA[null]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="group_ids"><![CDATA[null]]></TABLE_FIELD>
@@ -27,11 +10,28 @@
       <TABLE_FIELD FIELD_KEY="element_importance"><![CDATA[null]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="table_id"><![CDATA[1591649137-0-1]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="creation_time"><![CDATA[1591649137]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="__user_id"><![CDATA[1554892638.1731]]></TABLE_FIELD>
-      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[null]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="__user_agent_id"><![CDATA[]]></TABLE_FIELD>
       <TABLE_FIELD FIELD_KEY="__ip"><![CDATA[{&quot;REMOTE_ADDR&quot;:&quot;::1&quot;,&quot;HTTP_CLIENT_IP&quot;:&quot;&quot;,&quot;HTTP_X_FORWARDED_FOR&quot;:&quot;&quot;}]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="form_title"><![CDATA[Plugin Upload Form]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="form_description"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="form_success_message"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="button_value"><![CDATA[]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="form_options"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="auth_level"><![CDATA[[&quot;0&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="email"><![CDATA[ayoola@ayoo.la]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="requirements"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_title"><![CDATA[[&quot;About&quot;,&quot;Getting Started&quot;,&quot;Git Repository Link&quot;,&quot;Demo Video (Youtube)&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_name"><![CDATA[[&quot;article_content&quot;,&quot;installation&quot;,&quot;git_link&quot;,&quot;demo_video&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_group_name"><![CDATA[null]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_default_value"><![CDATA[[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_placeholder"><![CDATA[[&quot;Tell us about this plugin&quot;,&quot;Describe how to install and use this plugin&quot;,&quot;e.g. https:\/\/github.com\/sample\/example-plugin&quot;,&quot;https:\/\/youtube.com\/watch?v=uw9JcqKE7b8&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_type"><![CDATA[[&quot;html&quot;,&quot;html&quot;,&quot;text&quot;,&quot;text&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_validators"><![CDATA[[&quot;_nonemptyvalue&quot;,&quot;_nonemptyvalue&quot;,&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_access_level"><![CDATA[[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="element_multioptions"><![CDATA[[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="modified_time"><![CDATA[1591862984]]></TABLE_FIELD>
+      <TABLE_FIELD FIELD_KEY="__update_user_id"><![CDATA[[1554892638.173078]]]></TABLE_FIELD>
     </TABLE_ROW>
   </RECORDS>
   <TABLE_SETTINGS>

@@ -16,7 +16,7 @@
  * @see PageCarton_Widget
  */
 
-class GitRepository_Download extends PageCarton_Widget
+class GitRepository_Download extends GitRepository
 {
 	
     /**
@@ -37,34 +37,19 @@ class GitRepository_Download extends PageCarton_Widget
      * 
      * 
      */
-	public static function filterGitUrl( $url )
-    {
-        if( empty( $url ) )
-        {
-            return false;
-        }
-        $url = str_ireplace( array( '.git', '.zip', '.tar.gz', 'https://', 'http://' ), '', $url );
-        $url = 'https://' . $url . '/archive/master.tar.gz';
-        return $url;
-    }
-
-    /**
-     * 
-     * 
-     */
 	public static function hook( $object, $method, &$data )
     {
         if( $method !== 'getDownloadContent' )
         {
             return false;
         }
-        if( empty( $data['git'] ) )
+        if( empty( $data['git_link'] ) )
         {
             return false;
         }
-        if( $url = self::filterGitUrl( $data['git'] ) )
+        if( $url = self::filterGitUrl( $data['git_link'] ) )
         {
-            $data['download_url'] = $url;
+        //    $data['download_url'] = $url;
         }
     }
 
