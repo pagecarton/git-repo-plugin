@@ -9,7 +9,7 @@
 * @generated Ayoola_Page_Editor_Layout
 * @copyright  Copyright (c) PageCarton. (http://www.PageCarton.com)
 * @license    http://www.PageCarton.com/license.txt
-* @version $Id: post-viewer-plugin.php	Thursday 11th of June 2020 04:40:54 PM	ayoola@ayoo.la $ 
+* @version $Id: post-viewer-plugin.php	Thursday 11th of June 2020 05:59:28 PM	ayoola@ayoo.la $ 
 */
 //	Page Include Content
 
@@ -272,6 +272,25 @@ $_cf8a5633828a426eafa0bb06be41bac2 = null;
 							{
 								
 $_bdd8809b6375666f6b49eaac7ddbcf3a = new Ayoola_Page_Editor_Text( array (
+  'editable' => '<a class="pc-btn" style="display:block;" href="/widgets/Application_Article_Type_Download?article_url={{{article_url}}}">Download Plugin <i class="fa fa-download pc_give_space"></i></a>
+',
+  'preserved_content' => '',
+  'url_prefix' => '/repository',
+  'pagewidget_id' => '1591898370-0-23',
+) );
+
+							}
+							else
+							{
+								
+$_bdd8809b6375666f6b49eaac7ddbcf3a = null;
+
+							}
+							
+							if( Ayoola_Loader::loadClass( 'Ayoola_Page_Editor_Text' ) )
+							{
+								
+$_7524e2c4c388b59e4917a75cbdafe757 = new Ayoola_Page_Editor_Text( array (
   'codes' => '<h3>Plugin Categories<br>
 &nbsp;</h3>
 <!--{{{@0(Application_Article_Category)-->
@@ -302,7 +321,7 @@ $_bdd8809b6375666f6b49eaac7ddbcf3a = new Ayoola_Page_Editor_Text( array (
 							else
 							{
 								
-$_bdd8809b6375666f6b49eaac7ddbcf3a = null;
+$_7524e2c4c388b59e4917a75cbdafe757 = null;
 
 							}
 							
