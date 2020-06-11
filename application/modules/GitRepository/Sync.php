@@ -51,7 +51,7 @@ class GitRepository_Sync extends GitRepository
             if( empty( $_REQUEST['ref'] ) )
             {
             //    $this->setViewContent( '<p class="badnews">This sync is built to only work when the "master" branch is pushed.</p>' ); 
-                return false;
+             //   return false;
             }
             $postId = $_REQUEST['article_url'];
             if( ! $postData = Application_Article_Abstract::loadPostData( $postId ) )
