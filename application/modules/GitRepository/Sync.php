@@ -79,8 +79,8 @@ class GitRepository_Sync extends GitRepository
             $filename = Ayoola_Doc::getDocumentsDirectory() . DS . $postData['download_url'];
             if( ! is_file( $filename ) )
             {
-                $this->setViewContent( '<p class="badnews">Plugin file data is lost</p>' ); 
-                return false;
+            //    $this->setViewContent( '<p class="badnews">Plugin file data is lost</p>' ); 
+            //    return false;
             }
 
             $tmpDir = CACHE_DIR . DS . __CLASS__ . DS . $postData['article_url'] . DS . time();
