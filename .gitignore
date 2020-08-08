@@ -12,3 +12,4 @@ application/pages/data-backup/
 extensions/
 application/databases/Application/Profile/table.xml
 application/module_files/
+application/databases/Application/settings.xml
