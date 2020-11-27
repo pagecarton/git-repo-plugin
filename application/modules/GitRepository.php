@@ -37,14 +37,14 @@ class GitRepository extends PageCarton_Widget
      * 
      * 
      */
-	public static function filterGitUrl( $url )
+	public static function filterGitUrl( $url, $repo = 'master' )
     {
         if( empty( $url ) )
         {
             return false;
         }
         $url = str_ireplace( array( '.git', '.zip', '.tar.gz', 'https://', 'http://' ), '', $url );
-        $url = 'https://' . $url . '/archive/master.tar.gz';
+        $url = 'https://' . $url . '/archive/' . $repo . '.tar.gz';
         return $url;
     }
 

@@ -73,7 +73,15 @@ class GitRepository_Sync extends GitRepository
                 
             if( ! $content = self::fetchLink( $url, array( 'time_out' => 3600, 'connect_time_out' => 360, 'raw_response_header' => true, 'return_as_array' => true, ) ) )
             {
-                $this->setViewContent( 'NOT ABLE TO CONNECT TO REPOSITORY - ' . $url . ' ' );
+                if( ! $url = self::filterGitUrl( $postData['git_link'], 'main' ) )
+                {
+                    $this->setViewContent( '<p class="badnews">GIT URI not properly set</p>' ); 
+                    return false;
+                }
+                if( ! $content = self::fetchLink( $url, array( 'time_out' => 3600, 'connect_time_out' => 360, 'raw_response_header' => true, 'return_as_array' => true, ) ) )
+                {
+                    $this->setViewContent( 'NOT ABLE TO CONNECT TO REPOSITORY - ' . $url . ' ' );
+                }
             }
 
             $filename = Ayoola_Doc::getDocumentsDirectory() . DS . $postData['download_url'];
